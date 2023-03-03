@@ -38,7 +38,7 @@ function updateCity(event) {
     cityTimeZone = moment.tz.guess();
   }
   let cityName = cityTimeZone.split(`/`)[1];
-  let citiesElement = document.querySelector("#display-city");
+  let citiesElement = document.querySelector("#cities");
   let cityElement = citiesElement.appendChild(document.createElement("div"));
 
   cityElement.innerHTML = showSeconds(cityName, cityTimeZone);
